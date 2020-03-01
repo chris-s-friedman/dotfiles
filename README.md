@@ -1,2 +1,6 @@
-# dotfiles
-My dotfiles
+# My personal dotfiles
+
+Currently I have dotfiles for:
+
+* .zshrc
+* .vimrc
