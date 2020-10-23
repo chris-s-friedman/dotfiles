@@ -1,0 +1,22 @@
+{
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "window.zoomLevel": 0,
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "python.defaultInterpreterPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8 ",
+    "python.formatting.blackPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/black",
+    "python.formatting.blackArgs": [
+        "--line-length=80  "
+    ],
+    "workbench.colorTheme": "Better Solarized Dark",
+    "python.linting.pycodestylePath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/pycodestyle",
+    "python.linting.pycodestyleArgs": [
+        "--max-line-length=80"
+    ],
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pylintEnabled": false,
+    "terminal.external.osxExec": "iTerm.app",
+}
