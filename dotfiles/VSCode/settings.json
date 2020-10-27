@@ -19,4 +19,12 @@
     "python.linting.pycodestyleEnabled": true,
     "python.linting.pylintEnabled": false,
     "terminal.external.osxExec": "iTerm.app",
+    "explorer.confirmDragAndDrop": false,
+    "path-intellisense.showHiddenFiles": true,
+    "path-intellisense.absolutePathToWorkspace": false,
+    "path-intellisense.autoSlashAfterDirectory": true,
+    "python.autoComplete.addBrackets": true,
+    "editor.rulers": [
+        80,
+    ],
 }
