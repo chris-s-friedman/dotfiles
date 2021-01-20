@@ -7,14 +7,13 @@
     "editor.formatOnSave": true,
     "python.formatting.provider": "black",
     "python.defaultInterpreterPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8 ",
-    "python.formatting.blackPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/black",
     "python.formatting.blackArgs": [
         "--line-length=80  "
     ],
     "workbench.colorTheme": "Better Solarized Dark",
-    "python.linting.pycodestylePath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/pycodestyle",
     "python.linting.pycodestyleArgs": [
-        "--max-line-length=80"
+        "--max-line-length=80",
+        "--ignore=E203"
     ],
     "python.linting.pycodestyleEnabled": true,
     "python.linting.pylintEnabled": false,
@@ -27,4 +26,6 @@
     "editor.rulers": [
         80,
     ],
+    "python.languageServer": "Pylance",
+    "python.analysis.completeFunctionParens": true,
 }
