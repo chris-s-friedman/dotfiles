@@ -3,7 +3,6 @@
     "git.autofetch": true,
     "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
     "terminal.integrated.fontFamily": "MesloLGS NF",
-    "window.zoomLevel": 0,
     "editor.formatOnSave": true,
     "python.formatting.provider": "black",
     "python.defaultInterpreterPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8 ",
@@ -28,4 +27,5 @@
     ],
     "python.languageServer": "Pylance",
     "python.analysis.completeFunctionParens": true,
+    "jupyter.askForKernelRestart": false
 }
