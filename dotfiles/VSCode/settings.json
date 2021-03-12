@@ -5,7 +5,7 @@
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "editor.formatOnSave": true,
     "python.formatting.provider": "black",
-    "python.defaultInterpreterPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8 ",
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "python.formatting.blackArgs": [
         "--line-length=80  "
     ],
@@ -27,5 +27,11 @@
     ],
     "python.languageServer": "Pylance",
     "python.analysis.completeFunctionParens": true,
-    "jupyter.askForKernelRestart": false
+    "jupyter.askForKernelRestart": false,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
 }
