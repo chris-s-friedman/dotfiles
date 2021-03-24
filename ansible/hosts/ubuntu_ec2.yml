@@ -1,0 +1,6 @@
+my-instance ansible_host=i-08351d89d5bf750b4
+[all:vars]
+ansible_ssh_common_args=-o StrictHostKeyChecking=no -o ProxyCommand="sh -c \"aws ssm start-session --target %h --document-name AWS-StartSSHSession --parameters 'portNumber=%p'\""
+ansible_user='ubuntu'
+ansible_become=true
+# ansible_ssh_private_key_file='~/.ssh/id_rsa'
