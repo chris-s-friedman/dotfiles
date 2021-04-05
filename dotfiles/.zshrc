@@ -14,7 +14,7 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME.local/bin:$PATH
 export PATH=/Library/Frameworks/Python.framework/Versions/3.8/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/friedmanc1/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Get all the colors
 export TERM="xterm-256color"
