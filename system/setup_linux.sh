@@ -1,2 +1,2 @@
 sudo apt install npm
-npm i -g gitmoji-cli
+sudo npm i -g gitmoji-cli
