@@ -1,5 +1,6 @@
 set nocompatible
 syntax on
+set number
 filetype off
 colorscheme default
 
