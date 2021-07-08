@@ -34,3 +34,4 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     sudo apt-get install fzf
     sudo apt install bat
     echo 'alias cat="batcat"' > ~/env.sh
+fi
