@@ -10,6 +10,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
+# make home bin folder
+if [ ! -d ~/bin/ ]; then
+  mkdir ~/bin/
+fi
+
 # Install utilities
 # Install Prettyping
 curl https://raw.githubusercontent.com/denilsonsa/prettyping/master/prettyping > $HOME/bin/prettyping
