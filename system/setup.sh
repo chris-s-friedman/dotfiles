@@ -21,7 +21,8 @@ curl https://raw.githubusercontent.com/denilsonsa/prettyping/master/prettyping >
 sudo chmod +x $HOME/bin/prettyping
 
 # Install things in os specific manner:
-if [ "$(uname)" == "Darwin" ]; then
+if [ "$(uname)" == "Darwin" ]
+then
     # Do something under Mac OS X platform 
     # Install Brew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -30,7 +31,8 @@ if [ "$(uname)" == "Darwin" ]; then
     brew install fzf
     brew install bat
     echo 'alias cat="bat"' > ~/env.sh
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]
+then
     # Do something under GNU/Linux platform
     # Install npm
     sudo apt install npm
