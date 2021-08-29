@@ -1,0 +1,45 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+brew "bat"
+brew "bfg"
+brew "mono"
+brew "ckan"
+brew "cmake"
+brew "docker", link: false
+brew "fzf"
+brew "node"
+brew "gatsby-cli", link: false
+brew "gh"
+brew "git"
+brew "gitmoji"
+brew "go"
+brew "htop"
+brew "macvim"
+brew "mas"
+brew "ninvaders"
+brew "nmap"
+brew "prettyping"
+brew "python@3.8"
+brew "tldr"
+brew "zork"
+cask "atom"
+cask "beersmith"
+cask "docker"
+cask "font-hack-nerd-font"
+cask "google-chrome"
+cask "raspberry-pi-imager"
+cask "skype"
+cask "slack"
+cask "steam"
+cask "visual-studio-code"
+cask "vlc"
+cask "zoom"
+mas "1Password 7", id: 1333542190
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Spark", id: 1176895641
