@@ -26,10 +26,6 @@ then
     # Do something under Mac OS X platform 
     # Install Brew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    # install utilities
-    brew install gitmoji
-    brew install fzf
-    brew install bat
     echo 'alias cat="bat"' > ~/env.sh
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]
 then
