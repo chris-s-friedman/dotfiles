@@ -1,4 +1,7 @@
-#!/usr/local/bin/zsh
+#!/usr/bin/env
+
+set -euo pipefail
+
 cp ~/dotfiles/dotfiles/.zshrc ~/.zshrc
 cp ~/dotfiles/dotfiles/.p10k.zsh ~/.p10k.zsh
 cp ~/dotfiles/dotfiles/env.sh ~/env.sh
