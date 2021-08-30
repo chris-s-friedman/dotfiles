@@ -1,4 +1,7 @@
-#!/usr/local/bin/zsh
+#!/usr/bin/env
+
+set -euo pipefail
+
 cp ~/dotfiles/dotfiles/.zshrc ~/.zshrc
 cp ~/dotfiles/dotfiles/.p10k.zsh ~/.p10k.zsh
 cp ~/dotfiles/dotfiles/env.sh ~/env.sh
@@ -15,10 +18,7 @@ if [ ! -d ~/bin/ ]; then
   mkdir ~/bin/
 fi
 
-# Install utilities
-# Install Prettyping
-curl https://raw.githubusercontent.com/denilsonsa/prettyping/master/prettyping > $HOME/bin/prettyping
-sudo chmod +x $HOME/bin/prettyping
+
 
 # Install things in os specific manner:
 if [ "$(uname)" == "Darwin" ]
@@ -26,10 +26,8 @@ then
     # Do something under Mac OS X platform 
     # Install Brew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    # install utilities
-    brew install gitmoji
-    brew install fzf
-    brew install bat
+    cp ~/dotfiles/dotfiles/Brewfile ~/Brewfile
+    brew bundle
     echo 'alias cat="bat"' > ~/env.sh
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]
 then
@@ -41,4 +39,8 @@ then
     sudo apt-get install fzf
     sudo apt install bat
     echo 'alias cat="batcat"' > ~/env.sh
+    # Install Prettyping
+    curl https://raw.githubusercontent.com/denilsonsa/prettyping/master/prettyping > $HOME/bin/prettyping
+    sudo chmod +x $HOME/bin/prettyping
+    echo 'alias ping="$HOME/bin/prettyping --noloegend"' > ~/env.sh
 fi
