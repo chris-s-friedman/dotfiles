@@ -4,8 +4,9 @@ set -euo pipefail
 
 cp ~/dotfiles/dotfiles/.zshrc ~/.zshrc
 cp ~/dotfiles/dotfiles/.p10k.zsh ~/.p10k.zsh
-cp ~/dotfiles/dotfiles/env.sh ~/env.sh
-cp ~/dotfiles/dotfiles/functions.sh ~/functions.sh 
+cp ~/dotfiles/dotfiles/.alias ~/.alias
+cp ~/dotfiles/dotfiles/.exports ~/.exports
+cp ~/dotfiles/dotfiles/.functions.sh ~/.functions.sh 
 
 # install oh-my-zsh addons
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
