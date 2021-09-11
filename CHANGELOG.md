@@ -1,5 +1,17 @@
 # dotfiles Change History
 
+## Release 0.2.0
+
+### Summary
+
+- Emojis: 🚚 x1
+- Categories: Other Changes x1
+
+### New features and changes
+
+- [#14](https://github.com/chris-s-friedman/dotfiles/pull/14) - 🚚 Better dotfile organization - [47766ca9](https://github.com/chris-s-friedman/dotfiles/commit/47766ca92d3f10bd65fcefe4749de473c7a56e32) by [chris-s-friedman](https://github.com/chris-s-friedman)
+
+
 ## Release 0.1.1
 
 ### Summary
