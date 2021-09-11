@@ -1,58 +1,34 @@
 # My personal dotfiles
 
-Currently I have dotfiles for:
+If you're looking at this and you're not @chris-s-friedman:
 
-* .zshrc (for my rpi)
-* .vimrc
+1. IMHO, dotfiles are a set of very personal documents that _you_ should customize to best fit your preferences and experience
+2. If you see something that looks wonky or have a question, don't hesitate to open an issue or make changes and make a PR
 
-# ZSH
+If you're looking at this and _you are @chris-s-friedman_:
 
-## Installation
+**You should update README's more often.**
 
-Instructions cribbed from [here](https://www.uberbuilder.com/oh-my-zsh-on-raspberry-pi/).
+# Instructions
 
-1. update the pi
+## Set up zsh
 
-```bash
-sudo apt-get update && sudo apt-get upgrade
+First step is to change shell to zsh and install ohmyzsh.
+
+```sh
+sh system/set_shell.sh
 ```
 
-2. Install git and zsh
+_Note_: if you're on a system that doesn't already have zsh, you'll have to install it:
 
 ```bash
 sudo apt-get install git zsh
 ```
 
-3. Make zsh default shell
+## Set up.... the rest
 
-```bash
-chsh -s /bin/zsh
-```
+This runs on both linux and macos distros. it copies over the dotfils to user directory, and then installs files using the appropriate package manager, `brew` for macOS and `apt-get` for ubuntu.
 
-4. Install `oh-my-zsh`
-
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-## ZSH Plugins
-
-### ZSH Autosuggestions
-```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-
-### ZSH Syntax Highlighting
-```bash
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
-
-### ZSH Completions
-```bash
-git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
-```
-
-### Powerlevel10k
-```bash
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```sh
+sh system/setup.sh
 ```
