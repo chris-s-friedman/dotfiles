@@ -1,5 +1,17 @@
 # dotfiles Change History
 
+## Release 0.1.1
+
+### Summary
+
+- Emojis: 🔥 x1
+- Categories: Removals x1
+
+### New features and changes
+
+- [#12](https://github.com/chris-s-friedman/dotfiles/pull/12) - 🔥 remove old linux setup script - [085bc410](https://github.com/chris-s-friedman/dotfiles/commit/085bc410d92bc50f397c18a32e04d0312ea07787) by [chris-s-friedman](https://github.com/chris-s-friedman)
+
+
 ## Release 0.1.0
 
 ### Summary
