@@ -1,5 +1,17 @@
 # dotfiles Change History
 
+## Release 0.3.0
+
+### Summary
+
+- Emojis: ? x1
+- Categories: Other Changes x1
+
+### New features and changes
+
+- [#16](https://github.com/chris-s-friedman/dotfiles/pull/16) -  :sparkles: add vim setup script - [be9a5e6a](https://github.com/chris-s-friedman/dotfiles/commit/be9a5e6a4a1ebfb706ad88d498352cd0fa742511) by [chris-s-friedman](https://github.com/chris-s-friedman)
+
+
 ## Release 0.2.0
 
 ### Summary
