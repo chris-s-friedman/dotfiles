@@ -20,7 +20,7 @@ fi
 curl https://raw.githubusercontent.com/denilsonsa/prettyping/master/prettyping > $HOME/bin/prettyping
 sudo chmod +x $HOME/bin/prettyping
 
-# Install things in os specific manner:
+# Install things in os specific os:
 if [ "$(uname)" == "Darwin" ]; then
     # Do something under Mac OS X platform 
     # Install Brew
