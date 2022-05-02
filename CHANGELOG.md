@@ -1,5 +1,22 @@
 # dotfiles Change History
 
+## Release 1.0.0
+
+### Summary
+
+- Emojis: ? x3, ⚡️ x1, ✨ x2
+- Categories: Additions x2, Other Changes x4
+
+### New features and changes
+
+- [#23](https://github.com/chris-s-friedman/dotfiles/pull/23) -  Fixup - [f1099713](https://github.com/chris-s-friedman/dotfiles/commit/f1099713fd46dfe7e029ee1ba6aaf032143a19d8) by [chris-s-friedman](https://github.com/chris-s-friedman)
+- [#22](https://github.com/chris-s-friedman/dotfiles/pull/22) - ⚡️ remove unused items from brewfile - [633c3cb3](https://github.com/chris-s-friedman/dotfiles/commit/633c3cb3502a2e5144218c45a30883a00d37a22c) by [chris-s-friedman](https://github.com/chris-s-friedman)
+- [#21](https://github.com/chris-s-friedman/dotfiles/pull/21) - ✨ add gitignore to repo - [7feafb84](https://github.com/chris-s-friedman/dotfiles/commit/7feafb8463a0ca488950c906f4279ca5762ab889) by [chris-s-friedman](https://github.com/chris-s-friedman)
+- [#20](https://github.com/chris-s-friedman/dotfiles/pull/20) - ✨ add ability to query by filter - [5b4a7e7a](https://github.com/chris-s-friedman/dotfiles/commit/5b4a7e7a6951ebfbe2bae5dd071f910c38d575b1) by [chris-s-friedman](https://github.com/chris-s-friedman)
+- [#19](https://github.com/chris-s-friedman/dotfiles/pull/19) -  :wrench: add new things to my brewfile - [2aeb74ff](https://github.com/chris-s-friedman/dotfiles/commit/2aeb74ff62e268ed78ca3fc9fe1114c6fae42081) by [chris-s-friedman](https://github.com/chris-s-friedman)
+- [#18](https://github.com/chris-s-friedman/dotfiles/pull/18) -  :sparkles: new script to query the dataservice - [fa9012fd](https://github.com/chris-s-friedman/dotfiles/commit/fa9012fd9c060702ee78f0c300a630fba11c102b) by [chris-s-friedman](https://github.com/chris-s-friedman)
+
+
 ## Release 0.3.0
 
 ### Summary
