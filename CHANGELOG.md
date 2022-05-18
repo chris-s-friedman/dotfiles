@@ -1,5 +1,17 @@
 # dotfiles Change History
 
+## Release 1.1.0
+
+### Summary
+
+- Emojis: ✨ x1
+- Categories: Additions x1
+
+### New features and changes
+
+- [#25](https://github.com/chris-s-friedman/dotfiles/pull/25) - ✨ add abiltiy to query by filter and return certain keys from response - [dd6b0062](https://github.com/chris-s-friedman/dotfiles/commit/dd6b0062601dbe55d5fa7b5756af4cdd84fd6341) by [chris-s-friedman](https://github.com/chris-s-friedman)
+
+
 ## Release 1.0.0
 
 ### Summary
