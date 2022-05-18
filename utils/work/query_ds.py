@@ -23,6 +23,38 @@ def get_host(host_qa):
         return HOSTS.get("kf_dataservice_prd")
 
 
+def missing_key_handler(missing_key, key_list):
+    raise KeyError(f"{missing_key} not one of {key_list}")
+
+
+def entity_handler(e, key=None):
+    """Print entities to the terminal as requested
+
+    :param e: entity as returned by one of the scrape functions in kf_utils
+    :type e: dict
+    :param key: key(s) to print to the terminal. if None, print everything
+    :type key: list
+    """
+    if key:
+        keys_to_fetch = ("kf_id",) + key
+        try:
+            out = {k: e[k] for k in set(keys_to_fetch)}
+        except KeyError as missing_key:
+            missing_key_handler(missing_key, e.keys())
+    else:
+        out = e
+    print(json.dumps(out, indent=4))
+
+
+key_option = click.option(
+    "-key",
+    "-k",
+    multiple=True,
+    type=str,
+    help="Specific Keys to return from the response object.",
+)
+
+
 @click.group()
 @click.option(
     "--host_qa", is_flag=True, help="Flag to query the qa dataservice"
@@ -37,21 +69,23 @@ def queries(ctx, host_qa):
 
 @queries.command("kf_id")
 @click.argument("kf_id", type=str)
+@key_option
 @click.pass_context
-def run_kf_id_query(ctx, kf_id):
+def run_kf_id_query(ctx, kf_id, key):
     """
     Query the given host for the given kf_id
     """
     host = ctx.obj["host"]
     for e in yield_entities_from_kfids(host, [kf_id], show_progress=False):
-        print(json.dumps(e, indent=4))
+        entity_handler(e, key)
 
 
 @queries.command("filter")
 @click.argument("endpoint", type=str)
 @click.argument("filter", type=str)
+@key_option
 @click.pass_context
-def run_filter_query(ctx, endpoint, filter):
+def run_filter_query(ctx, endpoint, filter, key):
     """
     Query the given host using the given filter
     """
@@ -60,9 +94,8 @@ def run_filter_query(ctx, endpoint, filter):
     for e in yield_entities_from_filter(
         host, endpoint, filter_dict, show_progress=False
     ):
-        print(json.dumps(e, indent=4))
+        entity_handler(e, key)
 
 
 if __name__ == "__main__":
-    # run_query(kf_id, host_qa)
     queries()
